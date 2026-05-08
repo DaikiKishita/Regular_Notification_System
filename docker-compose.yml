@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: ./app
+    container_name: app
+    ports:
+      - "9577:9577"
+    volumes:
+      - ./app:/app
+
